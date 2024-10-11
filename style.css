@@ -80,16 +80,20 @@ body{
     border-radius: 30px;
     margin: 2px;
     border: 1px solid transparent ;
+    transition-duration: 2s;
+   
 }
 .desc p:hover{
     color: #a435f0;
     background-color: white;
     border: 1px solid black;
+   
 }
 .sale__image{
     width: 100%;
     position: relative;
 }
+   
 
 .image__offer{
     width: 35%;
@@ -99,7 +103,23 @@ body{
     position: absolute;
     top: 30%;
     left: 10%;
+    animation-name: square;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
     
+
+
+@keyframes square{
+    0%{
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
 
 }
 
